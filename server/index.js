@@ -6,6 +6,7 @@ const app = express();
 
 // TOP LEVEL MIDDLEWARE
 app.use(bodyParser.json());
+app.use(express.static('../public/build'));
 
 // DATA
 const messagesUrl = '/api/messages';
